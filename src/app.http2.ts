@@ -44,7 +44,6 @@ const server = http2.createSecureServer({
     }
 
 })
-
 server.listen(3000, () => {
     console.log("Server run port 3000");
 })
