@@ -9,13 +9,11 @@ export class TodosRoutes {
 
         const router = Router();
         const todoController = new TodosController();
-        router.get('/', todoController.getTodos );
-        router.get('/:id', todoController.getTodoById)
-        router.post('/', todoController.createTodo)
-        router.put('/:id', todoController.UpdataTodo)
-        router.delete('/:id', todoController.deleteTodo)
+        router.get('/', todoController.getTodos);
+        router.get('/:id', todoController.getTodoById);
+        router.post('/', todoController.createTodo);
+        router.put('/:id', todoController.UpdataTodo);
+        router.delete('/:id', todoController.deleteTodo);
         return router;
     }
-
-
 }

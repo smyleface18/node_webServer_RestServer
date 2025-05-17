@@ -1,7 +1,5 @@
-import { config } from 'dotenv'
-import { get } from 'env-var' 
-
-config({path: 'envarioment.env'})
+import 'dotenv/config';
+import { get } from 'env-var';
 
 export const envs = {
 
